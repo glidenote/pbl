@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'pbl'
+Pbl::CLI.run
