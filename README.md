@@ -1,6 +1,6 @@
-# Pbl
+# Pbl (Pinboard line)
 
-A command line tool for Pinboard to search your bookmarks.
+A command line tool for [Pinboard](http://pinboard.in/) to search your bookmarks.
 
 ## Installation
 
@@ -19,6 +19,12 @@ Or install it yourself as:
 ## Usage
 
     $ pbl word
+
+## Examples
+
+    $ pbl ruby
+    $ pbl mysql
+    $ pbl rails
 
 ## Contributing
 
