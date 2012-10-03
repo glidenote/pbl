@@ -10,8 +10,8 @@ module Pbl
     def initialize(*args)
       config = Pit.get("pinboard",
         require: {
-          "username" => "your account in pinboard",
-          "password" => "your password in pinboard"
+          "username" => "your_account_in_pinboard",
+          "password" => "your_password_in_pinboard"
       }
     )
 
