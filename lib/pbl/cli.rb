@@ -27,11 +27,8 @@ module Pbl
       unless ARGV.empty?
         pinboard = Pinboard::Client.new(:username => "#{@username}", :password => "#{@passowrd}")
         posts = pinboard.posts
-        data = pinboard.posts(:tag => ARGV[0]) #all posts tagged 'ruby'
-        for i in 1..data.size
-          num = i - 1
-          print "#{data[num][1]} || "
-          print "#{data[num][0]}".green,"\n"
+        pinboard.posts(:tag => ARGV[0]).each do |post|
+          puts post[1] + " || " + post[0].green
         end
       end
     end
