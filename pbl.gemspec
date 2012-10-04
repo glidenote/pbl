@@ -2,7 +2,7 @@
 require File.expand_path('../lib/pbl/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Akira Maeda"]
+  gem.authors       = ["Akira Maeda,Kohei Hasegawa"]
   gem.email         = ["glidenote@gmail.com"]
   gem.description   = %q{A command line tool for Pinboard to search your bookmarks.}
   gem.summary       = %q{A command line tool for Pinboard to search your bookmarks.}
