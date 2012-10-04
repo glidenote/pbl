@@ -4,8 +4,8 @@ require File.expand_path('../lib/pbl/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Akira Maeda"]
   gem.email         = ["glidenote@gmail.com"]
-  gem.description   = %q{show pinboard list on command line}
-  gem.summary       = %q{show pinboard list on command line}
+  gem.description   = %q{A command line tool for Pinboard to search your bookmarks.}
+  gem.summary       = %q{A command line tool for Pinboard to search your bookmarks.}
   gem.homepage      = "https://github.com/glidenote/pbl"
 
   gem.files         = `git ls-files`.split($\)
