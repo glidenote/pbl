@@ -14,7 +14,12 @@ Gem::Specification.new do |gem|
   gem.name          = "pbl"
   gem.require_paths = ["lib"]
   gem.version       = Pbl::VERSION
+
   gem.add_dependency 'pinboard'
   gem.add_dependency 'pit'
   gem.add_dependency 'colored'
+
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'guard-rspec'
+  gem.add_development_dependency 'rb-fsevent'
 end
