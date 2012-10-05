@@ -27,6 +27,8 @@ Or install it yourself as:
     $ pbl mysql
     $ pbl rails
 
+![usage image](http://blog.glidenote.com/images/2012/10/pbl.png)
+
 ## Contributing
 
 1. Fork it
