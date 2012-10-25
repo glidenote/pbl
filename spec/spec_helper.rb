@@ -12,6 +12,6 @@ VCR.configure do |config|
 end
 
 RSpec.configure do |config|
-  config.include WebMock
+  config.include WebMock::API
   config.extend VCR::RSpec::Macros
 end
