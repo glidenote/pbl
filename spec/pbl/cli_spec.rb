@@ -63,16 +63,11 @@ describe Pbl::CLI do
         @subject.instance_variable_set(:@argv, ["ruby"])
       end
 
-      # should not call api actually
-      pending "should not raise SystemExit error" do
-        expect {
+      it "should invoke $stdout.puts at least once" do
+        VCR.use_cassette 'pinboard_requests' do
+          $stdout.should_receive(:puts).at_least(:once)
           @subject.run
-        }.to_not raise_error SystemExit
-      end
-
-      # should not call api actually
-      pending "should invoked @pinboard.posts" do
-        @subject.run
+        end
       end
     end
   end
