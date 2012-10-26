@@ -1,5 +1,7 @@
 # https://github.com/travis-ci/travis-ci/wiki/.travis.yml-options
+language: ruby
 rvm:
   - 1.9.2
   - 1.9.3
   - ruby-head
+script: "RAILS_ENV=test bundle exec rake spec 2>&1"
