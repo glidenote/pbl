@@ -1,5 +1,6 @@
 # Pbl (Pinboard line)
 [![Build Status](https://secure.travis-ci.org/glidenote/pbl.png)](http://travis-ci.org/glidenote/pbl)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/glidenote/pbl)
 
 A command line tool for [Pinboard](http://pinboard.in/) to search your bookmarks.
 
