@@ -19,6 +19,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'pit'
   gem.add_dependency 'colored'
   gem.add_dependency 'rake'
+  gem.add_dependency 'moji'
+  gem.add_dependency 'pager'
 
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'guard-rspec'
