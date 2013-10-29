@@ -49,10 +49,15 @@ module Pbl
     end
 
     def run
-      abort "Usage: pbl TAG" if @argv.empty?
       page unless $test_env
-      @pinboard.posts(:tag => @argv.join(',')).each do |post|
-        puts "[%s] %s %s" % [post[:time].strftime("%Y/%m/%d").cyan, post[:description].cut, post[0].green]
+      if @argv.empty?
+        @pinboard.posts(:results => 150).each do |post|
+          puts "[%s] %s %s" % [post[:time].strftime("%Y/%m/%d").cyan, post[:description].cut, post[0].green]
+        end
+      else
+        @pinboard.posts(:tag => @argv.join(',')).each do |post|
+          puts "[%s] %s %s" % [post[:time].strftime("%Y/%m/%d").cyan, post[:description].cut, post[0].green]
+        end
       end
     end
   end
