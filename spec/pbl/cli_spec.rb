@@ -51,10 +51,11 @@ describe Pbl::CLI do
         @subject.instance_variable_set(:@argv, [])
       end
 
-      it "should raise SystemExit error" do
-        expect {
+      it "should invoke $stdout.puts at least once" do
+        VCR.use_cassette 'pinboard_empty_requests' do
+          $stdout.should_receive(:puts).at_least(:once)
           @subject.run
-        }.to raise_error SystemExit
+        end
       end
     end
 

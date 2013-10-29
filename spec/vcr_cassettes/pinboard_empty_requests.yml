@@ -1,0 +1,34 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: https://foo:bar@api.pinboard.in/v1/posts/all?results=150
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 29 Oct 2013 02:54:19 GMT
+      Server: 
+      - Apache/2.2.22 (Ubuntu)
+      Vary: 
+      - Accept-Encoding
+      Content-Length: 
+      - "462"
+      Content-Type: 
+      - text/xml; charset=utf-8
+    body: 
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\
+        <posts user=\"glidenote\">\n\
+        <post href=\"http://www.slideshare.net/winebarrel/gitroute53-25545015\" time=\"2013-10-29T00:32:30Z\" description=\"Git\xE3\x82\x92\xE4\xBD\xBF\xE3\x81\xA3\xE3\x81\x9FRoute53\xE3\x81\xAE\xE7\xAE\xA1\xE7\x90\x86\" extended=\"via \xE3\x81\xAF\xE3\x81\xA6\xE3\x81\xAA\xE3\x83\x96\xE3\x83\x83\xE3\x82\xAF\xE3\x83\x9E\xE3\x83\xBC\xE3\x82\xAF - \xE4\xBA\xBA\xE6\xB0\x97\xE3\x82\xA8\xE3\x83\xB3\xE3\x83\x88\xE3\x83\xAA\xE3\x83\xBC http://b.hatena.ne.jp/hotentry\" tag=\"IFTTT Feedly Recently Read Saved for Later\" hash=\"1055f3645fff581d0ba85eda2f1dc37e\" meta=\"717b38dc9f969cee7c2256e69971d073\"  shared=\"no\"  /></posts>\n\
+        \t"
+    http_version: 
+  recorded_at: Tue, 29 Oct 2013 02:54:20 GMT
+recorded_with: VCR 2.6.0
