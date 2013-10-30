@@ -51,13 +51,13 @@ module Pbl
     def run
       page unless $test_env
       if @argv.empty?
-        @pinboard.posts(:results => 150).each do |post|
-          puts "[%s] %s %s" % [post[:time].strftime("%Y/%m/%d").cyan, post[:description].cut, post[0].green]
-        end
+        bookmarks = @pinboard.posts(:results => 150)
       else
-        @pinboard.posts(:tag => @argv.join(',')).each do |post|
+        bookmarks = @pinboard.posts(:tag => @argv.join(','))
+      end
+
+      bookmarks.each do |post|
           puts "[%s] %s %s" % [post[:time].strftime("%Y/%m/%d").cyan, post[:description].cut, post[0].green]
-        end
       end
     end
   end
